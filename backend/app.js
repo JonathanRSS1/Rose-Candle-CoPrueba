@@ -36,10 +36,15 @@ app.use(cookieParser());
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "http://localhost:5174"], // frontend
+    origin: [
+      "http://localhost:5173",
+      "http://localhost:5174",
+      "https://rose-candle-co-prueba-8n3d.vercel.app" // 👈 agrega tu dominio de Vercel
+    ],
     credentials: true, // permitir cookies
   })
 );
+
 
 // Rutas de las funciones
 app.use("/api/customers", customersRoutes);
