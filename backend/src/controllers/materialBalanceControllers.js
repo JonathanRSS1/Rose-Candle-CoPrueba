@@ -1,4 +1,4 @@
-import materialBalanceModel from "../models/materialBalance.js"; // Modelo de colecciones
+import materialBalanceModel from "../models/MaterialBalance.js"; // Modelo de colecciones
 
 // Array de métodos (CRUD)
 const materialBalanceControllers = {};
